@@ -1,45 +1,74 @@
-<!-- Contact Section with Formspree -->
-<section id="contact" class="contact-section py-12 bg-white">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Contact Us</h2>
-    
-    <div class="flex flex-col md:flex-row gap-8">
-      <!-- Form -->
+<!-- Contact Section -->
+<section id="contact" class="contact-section py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+      Contact Us
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- Contact Form -->
       <form 
         action="https://formspree.io/f/mnjgaydr" 
-        method="POST" 
-        class="flex-1 bg-gray-50 p-6 rounded shadow"
+        method="POST"
+        class="bg-gray-50 p-6 rounded-lg shadow-md"
       >
-        <label class="block mb-2 font-semibold text-gray-800">Name</label>
-        <input type="text" name="name" required class="w-full mb-4 p-2 border rounded" />
 
-        <label class="block mb-2 font-semibold text-gray-800">Email</label>
-        <input type="email" name="email" required class="w-full mb-4 p-2 border rounded" />
+        <input type="hidden" name="_subject" value="New Message From Website">
 
-        <label class="block mb-2 font-semibold text-gray-800">Phone</label>
-        <input type="text" name="phone" required class="w-full mb-4 p-2 border rounded" />
+        <label class="block mb-2 font-semibold text-gray-700">Name</label>
+        <input 
+          type="text" 
+          name="name" 
+          required 
+          class="w-full mb-4 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
 
-        <label class="block mb-2 font-semibold text-gray-800">Message</label>
-        <textarea name="message" required class="w-full mb-4 p-2 border rounded" rows="4"></textarea>
+        <label class="block mb-2 font-semibold text-gray-700">Email</label>
+        <input 
+          type="email" 
+          name="email" 
+          required 
+          class="w-full mb-4 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
 
-        <button type="submit" class="bg-[#0a2540] text-[#ffd700] px-6 py-3 rounded font-bold hover:bg-[#0f3a63]">
+        <label class="block mb-2 font-semibold text-gray-700">Phone</label>
+        <input 
+          type="tel" 
+          name="phone" 
+          class="w-full mb-4 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+
+        <label class="block mb-2 font-semibold text-gray-700">Message</label>
+        <textarea 
+          name="message" 
+          rows="4"
+          required
+          class="w-full mb-6 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        ></textarea>
+
+        <button 
+          type="submit"
+          class="w-full bg-[#0a2540] text-[#ffd700] py-3 rounded-lg font-bold hover:bg-[#0f3a63] transition"
+        >
           Send Message
         </button>
+
       </form>
 
       <!-- Google Map -->
-      <div class="flex-1">
+      <div class="w-full h-[400px] rounded-lg overflow-hidden shadow-md">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1234567890!2d3.4023456789!3d6.4567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b7c123456%3A0xabcdef1234567890!2sLekki%2C%20Lagos!5e0!3m2!1sen!2sng!4v1678901234567!5m2!1sen!2sng"
+          src="https://maps.google.com/maps?q=Lekki%20Lagos&t=&z=13&ie=UTF8&iwloc=&output=embed"
           width="100%"
-          height="400"
+          height="100%"
           style="border:0;"
-          allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
-    </div>
-  </div> 
-</section> 
 
+    </div>
+  </div>
+</section>
