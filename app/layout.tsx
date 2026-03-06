@@ -1,4 +1,4 @@
-import "../styles/globals.css"; // Import Tailwind
+import "../styles/globals.css"; // This imports your current globals.css
 
 export const metadata = {
   title: "Fresh Studio",
@@ -9,7 +9,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head />
-      <body className="bg-gray-50 text-gray-900 font-sans">{children}</body>
+      <body className="bg-background text-foreground font-sans">{children}</body>
     </html>
   );
 }
