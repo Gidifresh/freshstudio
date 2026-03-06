@@ -1,4 +1,4 @@
-import "./globals.css"; // Make sure this file exists in styles/globals.css
+import "../styles/globals.css"; // Import Tailwind
 
 export const metadata = {
   title: "Fresh Studio",
